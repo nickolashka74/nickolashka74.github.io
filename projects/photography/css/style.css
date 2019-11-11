@@ -1586,6 +1586,8 @@ body {
 }
 
 .blog__main-desc {
+    position: relative;
+    z-index: 1;
     max-width: 480px;
     margin: 40px auto 0;
     font-size: 20px;
@@ -1599,7 +1601,6 @@ body {
     position: absolute;
     top: 125px;
     right: 0;
-    z-index: 1;
     width: 1055px;
     height: 640px;
     border: 3px solid #fff;
@@ -1646,7 +1647,7 @@ body {
 }
 
 .blog__header {
-    font-style: 20px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1.5;
     color: #2b2d5c;
@@ -1709,7 +1710,8 @@ body {
 }
 
 .blog__item {
-    z-index: 2;
+    position: relative;
+    z-index: 1;
     max-width: 450px;
     margin: 30px;
     background-color: #fff;
