@@ -319,10 +319,11 @@ body.lock {
   top: 50%;
   left: 50%;
   display: block;
+  background-image: url(../img/icons/sprite.png);
+  background-position: 0px -24px;
   width: 6px;
   height: 10px;
   content: '';
-  background: url("../img/icons/arrow-right.png") center center no-repeat;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -353,11 +354,14 @@ body.lock {
 .header::before {
   position: absolute;
   top: 0;
-  left: 0;
+  right: -100%;
   z-index: 5;
   width: 100%;
   height: 100%;
   content: '';
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 .header__body {
@@ -385,11 +389,8 @@ body.lock {
 }
 
 .header.active::before {
-  height: 100%;
+  right: 0;
   background-color: #3B181E;
-  -webkit-transition: background-color .5s .5s;
-  -o-transition: background-color .5s .5s;
-  transition: background-color .5s .5s;
 }
 
 .header.active .header__logo {
@@ -600,12 +601,11 @@ body.lock {
   position: absolute;
   right: 0;
   top: 50%;
-  display: block;
-  width: 21px;
-  height: 21px;
-  background-image: url("../img/icons/arrow-down.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  display: inline-block;
+  background-image: url(../img/icons/sprite.png);
+  background-position: -24px 0px;
+  width: 14px;
+  height: 20px;
   content: '';
   -webkit-transform: rotate(-90deg) translateX(50%);
       -ms-transform: rotate(-90deg) translateX(50%);
@@ -662,8 +662,7 @@ body.lock {
 }
 
 .menu__socials {
-  position: absolute;
-  left: 95px;
+  position: fixed;
   bottom: 115px;
   opacity: 0;
   -webkit-transition: all .5s;
@@ -676,7 +675,6 @@ body.lock {
 }
 
 .menu.active .menu__socials {
-  position: fixed;
   opacity: 1;
   -webkit-transition: all .5s .5s;
   -o-transition: all .5s .5s;
@@ -1297,12 +1295,10 @@ body.lock {
   top: 22px;
   right: 24px;
   cursor: pointer;
-}
-
-.modal__close img {
-  display: block;
-  width: 22px;
-  height: 22px;
+  background-image: url(../img/icons/sprite.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 24px;
 }
 
 .modal__img {
@@ -1399,6 +1395,10 @@ body.lock {
     font-size: 45px;
   }
 
+  .menu__socials {
+    left: calc((100vw - 1920px) / 2 + 95px);
+  }
+
   .catalog__subtitle {
     font-size: 220px;
   }
@@ -1431,6 +1431,10 @@ body.lock {
 
   .menu__link:hover {
     font-size: calc(25px + 20 * ((100vw - 320px) / 1600));
+  }
+
+  .menu__socials {
+    left: 95px;
   }
 
   .catalog__subtitle {
@@ -1810,11 +1814,6 @@ body.lock {
     font-size: calc(10px + 5 * ((100vw - 320px) / 448));
   }
 
-  .works__header::before {
-    height: 112px;
-    background-color: #3B181E;
-  }
-
   .works__inner {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
@@ -1866,11 +1865,6 @@ body.lock {
 
   .header {
     height: 64px;
-  }
-
-  .header::before {
-    height: 100%;
-    background-color: #3B181E;
   }
 
   .header__body {
