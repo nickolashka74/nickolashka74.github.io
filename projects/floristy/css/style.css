@@ -662,7 +662,8 @@ body.lock {
 }
 
 .menu__socials {
-  position: fixed;
+  position: absolute;
+  left: 95px;
   bottom: 115px;
   opacity: 0;
   -webkit-transition: all .5s;
@@ -675,6 +676,7 @@ body.lock {
 }
 
 .menu.active .menu__socials {
+  position: fixed;
   opacity: 1;
   -webkit-transition: all .5s .5s;
   -o-transition: all .5s .5s;
@@ -1161,7 +1163,7 @@ body.lock {
 
 .image__item {
   position: relative;
-  width: calc(100% - 30px);
+  width: calc(100% - 31px);
   height: 100%;
 }
 
@@ -1395,7 +1397,7 @@ body.lock {
     font-size: 45px;
   }
 
-  .menu__socials {
+  .menu.active .menu__socials {
     left: calc((100vw - 1920px) / 2 + 95px);
   }
 
@@ -1433,7 +1435,7 @@ body.lock {
     font-size: calc(25px + 20 * ((100vw - 320px) / 1600));
   }
 
-  .menu__socials {
+  .menu.active .menu__socials {
     left: 95px;
   }
 
