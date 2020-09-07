@@ -495,7 +495,7 @@ body {
     background: url("../img/bg/promo.jpg") center center/cover no-repeat;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 2600px) {
     .promo {
         min-height: 100vh;
     }
