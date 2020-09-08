@@ -126,7 +126,7 @@ body.lock {
   visibility: hidden;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 .slick-slider {
@@ -1738,10 +1738,6 @@ body.lock {
     display: none;
   }
 
-  .btn--promo {
-    border-color: #FFF;
-  }
-
   .socials {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1778,6 +1774,10 @@ body.lock {
 
   .catalog__list {
     margin: 20px auto 0;
+  }
+
+  .item__footer {
+    bottom: 0;
   }
 
   .item:hover .item__footer {
