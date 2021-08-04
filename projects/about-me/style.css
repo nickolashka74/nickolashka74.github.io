@@ -1,0 +1,185 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	min-width: 320px;
+}
+body {
+	line-height: 1;
+	font-family: 'Roboto', sans-serif;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: 'Roboto', sans-serif;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+body {
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+
+	@media (max-width: 1200px) {
+		max-width: 970px;
+	}
+
+	@media (max-width: 992px) {
+		max-width: 750px;
+	}
+
+	@media (max-width: 768px) {
+		max-width: none;
+		padding: 0 15px;
+	}
+}
+
+.about {
+	padding: 100px 0;
+
+	@media (max-width: 992px) {
+		padding: 75px 0;
+	}
+
+	@media (max-width: 768px) {
+		padding: 50px 0;
+	}
+}
+
+.about__header {
+	display: grid;
+	grid-template-columns: 400px 1fr;
+	grid-template-rows: minmax(300px, auto);
+	grid-auto-rows: minmax(300px, auto);
+	gap: 50px;
+}
+
+.about__img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.about__img img {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about__title {
+	margin-bottom: 30px;
+	font-size: 36px;
+	font-weight: 500;
+}
+
+.about__group {
+	margin-bottom: 15px;
+	display: flex;
+}
+
+.about__group span {
+	margin-right: 10px;
+	font-weight: 500;
+}
+
+.about__group:nth-of-type(2) span {
+	flex: 1 0 auto;
+}
+
+.about__phone {
+	color: #000;
+}
+
+.about__languages {
+	margin-top: 50px;
+}
+
+.about__subtitle {
+	margin-bottom: 25px;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.about__footer {}
+
+.about__inner {}
+
+.about__field {}
+
+.about__label {}
+
+.about__input {}
+
+.about__info {}
+
+.about__link {}
+
+.about__text {}
