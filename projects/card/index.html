@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Николай Шлёмин - Сайт-визитка</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Николай Шлёмин</div>
+                <ul class="nav-links">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#interests">Интересы</a></li>
+                    <li><a href="#media">Книги и фильмы</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <img src="img/img-main.jpg" alt="Фотография Николая Шлёмина" class="profile-img">
+            <h1>Николай Шлёмин</h1>
+            <p>Менеджер проектов в интернет-магазине</p>
+        </div>
+    </section>
+
+    <!-- Секция "Обо мне" -->
+    <section id="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Привет! Меня зовут Николай, работаю я менеджером проектов в интернет-магазине. Занимаюсь в основном администрированием сайта, подключением коммуникаций (ip телефония, камеры), добавлением товаров и т.д.</p>
+                    <p>Это не первая моя попытка войти в IT, но как-то не сложилось в прошлые разы... Решил ещё раз попробовать, ничему меня жизнь не учит &#128522;.</p>
+                    <p>В свободное время смотрю ютубчик и киношки (иногда), слушаю музыку, играю в компьютерные игры (тоже иногда), исследую нейронки.</p>
+                </div>
+                <img src="img/img-reks.jpg" alt="За рабочим местом" class="about-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция интересов -->
+    <section id="interests" class="interests">
+        <div class="container">
+            <h2>Мои интересы</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <div class="interest-icon">&#127916;</div>
+                    <p>Фильмы</p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">&#128187;</div>
+                    <p>Программирование</p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">&#127925;</div>
+                    <p>Музыка</p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">&#129504;</div>
+                    <p>Нейронки</p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">&#127918;</div>
+                    <p>Видеоигры</p>
+                </div>
+                <div class="interest-item">
+                    <div class="interest-icon">&#9824;</div>
+                    <p>Покер</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция книг и фильмов -->
+    <section id="media">
+        <div class="container">
+            <h2>Любимые книги и фильмы</h2>
+            <div class="media-grid">
+                <div class="media-item">
+                    <div class="media-cover orwell"></div>
+                    <h3>1984</h3>
+                    <p>Джордж Оруэлл</p>
+                </div>
+                <div class="media-item">
+                    <div class="media-cover forty-five"></div>
+                    <h3>45 татуировок менеджера</h3>
+                    <p>Максим Батырев</p>
+                </div>
+                <div class="media-item">
+                    <div class="media-cover f1"></div>
+                    <h3>F1</h3>
+                    <p>2025</p>
+                </div>
+                <div class="media-item">
+                    <div class="media-cover face-off"></div>
+                    <h3>Без лица</h3>
+                    <p>1997</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция навыков -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Навыки</h2>
+            <div class="skills-container">
+                <div class="skills-list">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Figma</span>
+                </div>
+                <button class="toggle-btn" id="toggleBtn">Подробнее о навыках</button>
+                <div class="additional-text" id="additionalText">
+                    <p>Мои профессиональные навыки включают:</p>
+                    <ul>
+                        <li><strong>HTML5/CSS3:</strong> Семантическая верстка, адаптивный дизайн, CSS Grid, Flexbox, анимации</li>
+                        <li><strong>JavaScript:</strong> Начинал изучать, самые азы</li>
+                        <li><strong>Инструменты:</strong> Git, npm/yarn</li>
+                        <li><strong>Дизайн:</strong> Работал в Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section id="contact">
+        <div class="container">
+            <h2>Связаться со мной</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <a href="mailto:xy4u74@yandex.ru">xy4u74@yandex.ru</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <a href="tel:+79227462244">+7 (922) 746-22-44</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🐙</span>
+                    <a href="https://github.com/nickolashka74" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Николай Шлёмин. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

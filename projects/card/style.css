@@ -1,0 +1,312 @@
+/* Сброс стилей и базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8fafc;
+}
+
+/* Общие стили для контейнеров */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #2563eb;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #2563eb;
+    margin: 10px auto;
+}
+
+/* Стили для шапки */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* Стили для героя */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border: 5px solid #2563eb;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #666;
+}
+
+/* Стили для секции "Обо мне" */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text p {
+    margin: 10px 0;
+}
+
+.about-img {
+    flex: 1;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для секции интересов */
+.interests {
+    background-color: #fff;
+}
+
+.interests-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.interest-item {
+    text-align: center;
+    width: 150px;
+}
+
+.interest-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+/* Стили для секции книг и фильмов */
+.media-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.media-item {
+    width: 200px;
+    text-align: center;
+}
+
+.media-cover {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.orwell {
+    background-image: url("img/media/1984.jpg");
+}
+
+.forty-five {
+    background-image: url("img/media/forty-five.jpg");
+}
+
+.f1 {
+    background-image: url("img/media/f1.jpg");
+}
+
+.face-off {
+    background-image: url("img/media/face-off.jpg");
+}
+
+/* Стили для секции навыков */
+.skills {
+    background-color: #fff;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.skill-tag {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.toggle-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.additional-text {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    display: none;
+}
+
+.additional-text ul {
+    padding-left: 20px;
+}
+
+.additional-text.show {
+    display: block;
+}
+
+/* Стили для секции контактов */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-icon {
+    font-size: 24px;
+    color: #2563eb;
+}
+
+/* Стили для подвала */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-img {
+        order: -1;
+    }
+    
+    .hero h1 {
+        font-size: 36px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .nav-links li {
+        margin-left: 0;
+    }
+}
